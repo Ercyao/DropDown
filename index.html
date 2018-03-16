@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+		<title>DropDown - Ercyao</title>
+		<style>
+		    .drop-down-box{width: 100%;display: flex;justify-content: space-around;}
+		    .drop-down-box .drop-down{width: 120px;text-align: center;}
+		    .drop-down-box .drop-down ul{font-size: 14px;}
+		</style>
+	</head>
+<body>
+    <div class="drop-down-box">
+    	<div class="drop-down" id="drop-down1"></div>
+    	<div class="drop-down" id="drop-down2"></div>
+    </div>
+<script src="dropDown.js"></script>
+<script>
+	var title1 = "经典的动漫";
+	var title2 = "收藏的动漫";
+	var items1 = [{url:"https://baike.so.com/doc/2873397-3032543.html",name:"海贼王"},{url:"https://baike.so.com/doc/2089677-2210664.html",name:"火影忍者"},{url:"https://baike.so.com/doc/4470546-4679457.html",name:"死神"}];
+	var items2 = [{url:"https://baike.so.com/doc/928405-981327.html",name:"罪恶王冠 "},{url:"https://baike.so.com/doc/23640377-25012496.html",name:"在下坂本,有何贵干?"},{url:"https://baike.so.com/doc/4228844-4430597.html",name:"地狱少女"},{url:"https://baike.so.com/doc/392584-7577623.html",name:"尸鬼"}];
+	var dropDown1 = dropDown("drop-down1", items1, title1);
+	var dropDown2 = dropDown("drop-down2", items2, title2);
+</script>
+	</body>
+</html>
